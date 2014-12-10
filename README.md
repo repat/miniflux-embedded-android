@@ -31,7 +31,7 @@ The button is a black/white version of  [Custom color round square button](https
 * INTERNET, for obvious reasons
 
 ## License 
-* see [LICENSE](https://github.com/username/appname/blob/master/LICENSE.md) file
+* see [LICENSE](https://github.com/repat/miniflux-embedded-android/blob/master/LICENSE.md) file
 
 ## Version 
 * Version 1.0
