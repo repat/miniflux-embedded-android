@@ -1,10 +1,10 @@
 Miniflux embedded
 ======
-**Miniflux embedded** is an Android app for the minimalist RSS Reader [Miniflux](http://miniflux.net). It's basically an embedded WebView that saves your Miniflux URL and [cookies](https://en.wikipedia.org/wiki/Magic_cookie). Since Miniflux is [responsive](https://en.wikipedia.org/wiki/Responsive_web_design) there is really no need for a real client, except for offline reading. So this app will only save you the trouble of logging in and/or using your browser.
+**Miniflux embedded** is an Android app for the minimalist RSS Reader [Miniflux](http://miniflux.net). It's basically an embedded WebView that saves your Miniflux URL and [cookies](https://en.wikipedia.org/wiki/Magic_cookie). Since Miniflux is [responsive](https://en.wikipedia.org/wiki/Responsive_web_design) there is really no need for a "real" client, except for offline reading. So this app will only save you the trouble of logging in and/or using your browser.
 
 #### Usage
-[At the very first start and only then](https://www.youtube.com/watch?v=A4I9DMSvJxg) it will ask you for your Miniflux URL. If you mistyped, you can un- and reinstall the app or press *Clear data* under *Settings/Apps*.
-It will then prompt you for your credentials. These are save by the Android internal [CookieSyncManager](https://developer.android.com/reference/android/webkit/CookieSyncManager.html). You can now use the app just like your webreader.
+[At the very first start and only then](https://www.youtube.com/watch?v=A4I9DMSvJxg) it will ask you for your Miniflux URL. If you mistysped, you can un- and reinstall the app or press *Clear data* under *Settings/Apps*.
+It will then prompt you for your credentials. These are saved by the Android internal [CookieSyncManager](https://developer.android.com/reference/android/webkit/CookieSyncManager.html). You can now use the app just like your webreader.
 
 **I would strongly suggest a SSL secured(https://) connection!**
 
