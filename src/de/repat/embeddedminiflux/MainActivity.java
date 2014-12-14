@@ -1,6 +1,8 @@
 package de.repat.embeddedminiflux;
 
 import android.annotation.SuppressLint;
+import android.webkit.SslErrorHandler;
+import android.net.http.SslError;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -37,8 +39,21 @@ public class MainActivity extends Activity {
 			@Override
 			public void onReceivedError(WebView view, int errorCode,
 					String description, String failingUrl) {
-				Toast.makeText(MainActivity.this, "Oups", Toast.LENGTH_SHORT)
+				Toast.makeText(MainActivity.this,
+						description + " at " + failingUrl, Toast.LENGTH_SHORT)
 						.show();
+			}
+
+			@Override
+			public void onReceivedSslError(WebView view,
+					SslErrorHandler handler, SslError error) {
+				// ignore self-signed certificate error
+				if (error.hasError(SslError.SSL_UNTRUSTED)) {
+					Toast.makeText(MainActivity.this,
+							"Self-signed certificate accepted",
+							Toast.LENGTH_SHORT).show();
+					handler.proceed();
+				}
 			}
 
 			@Override
