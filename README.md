@@ -35,6 +35,7 @@ The button is a black/white version of  [Custom color round square button](https
 
 ## Version 
 * Version 1.0.1
+
 #### Changelog
 * 1.0.1 : self-signed certificates are accepted
 * 1.0   : initial release, cookies and Miniflux URL are saved
